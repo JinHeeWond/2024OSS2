@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link, a:visited {
+            color: black;
+        }
+        a:hover {
+            color: limegreen;
+        }
+        body {
+            background-color: white;
+        }
+        
+        .box {
+            border: 1px solid white;
+            font-size: 15px; /* 텍스트 크기 조정 */
+            font-weight: bold;
+            margin: 10px 10px 0 10px;
+            padding: 5px;
+            width: calc(100% - 80px); /* 상자의 크기를 조정 */
+            height: 100px; /* 상자 높이 줄이기 */
+            background-color: #E2E2E2;
+            box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+            position: relative; /* 버튼을 박스 안에 배치하기 위해 사용 */
+        }
+        .btn {
+            text-decoration: none;
+            font-size: 1rem;
+            color: white !important; /* 글자 색을 흰색으로 설정 */
+            padding: 5px 5px 5px 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: all 0.1s;
+            text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+            background-color: gray; /* 기본 배경색을 회색으로 설정 */
+        }
+        .btn:active {
+            transform: translateY(3px);
+        }
+        .btn:hover {
+            background-color: black; /* 마우스를 올렸을 때 배경색을 검은색으로 변경 */
+            color: white !important; /* 마우스를 올렸을 때도 글자 색을 흰색으로 유지 */
+        }
+        .btn.green {
+            background-color: MediumSeaGreen; /* 초록색 배경으로 설정 */
+        }
+
+        .comma {
+            color: black;
+            font-size: 10px;
+            margin-left: 2px; /* 쉼표 왼쪽 여백 줄이기 */
+            margin-right: 2px; /* 쉼표 오른쪽 여백 줄이기 */
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <font color="MediumSeaGreen" style="font-size: 30px;">
+            Welcome to JinHeeWon's Homepage (22300743)
+        </font>
+    </h1>
+    <p>
+        Use the menu to select different Stylesheets
+    </p>
+    <a class="btn" href="#blue">Stylesheet 1</a>
+    <a class="btn" href="http://127.0.0.1:5500/hw1/style1.htm">Stylesheet 2</a>
+    <a class="btn green" href="#red">Stylesheet 3</a>
+    <a class="btn" href="#gray">Stylesheet 4</a>
+    <a class="btn" href="http://127.0.0.1:5500/hw1/index.htm">No Stylesheet</a>
+
+    <h1>
+        <font color="MediumSeaGreen" style="font-size: 30px;">
+            Same Page Different Stylesheets
+        </font>
+    </h1>
+    <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+        <br>
+        <a href="https://www.w3schools.com/css/demo_default.htm" class="black-link">Stylesheet1</a>, 
+        <a href="http://127.0.0.1:5500/hw1/style1.htm">Stylesheet2</a>, 
+        <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet3</a>, 
+        <a href="https://www.w3schools.com/css/demo_default.htm">Stylesheet4</a>.
+    </p>
+
+    <h1>
+        <font color="MediumSeaGreen" style="font-size: 25px;">
+            No Styles
+        </font>
+    </h1>
+    <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+        <br>
+        <a href="http://127.0.0.1:5500/hw1/index.htm">No Stylesheet</a>.
+    </p>
+    <div class="box">
+        <font color="MediumSeaGreen" style="font-size: 20px;">
+            Side-Bar
+        </font>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+    </div>
+
+    <p style="text-align:center;">
+        <font style="font-size: 10px;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </font>
+    </p>
+
+</body>
+</html>
